@@ -8,6 +8,7 @@ class TextsOfFrame extends JPanel{
     JLabel title;
 
     JLabel firstPolynomial;
+    JLabel francesco;
     JLabel secondPolynomial;
     JLabel resultText;
 
@@ -20,6 +21,11 @@ class TextsOfFrame extends JPanel{
     JButton integrateButton;
     JButton derivateButton;
     protected TextsOfFrame(){
+
+        francesco = new JLabel("Francesco Maxim - 30224");
+        francesco.setBounds(30,425,400,30);
+        francesco.setFont(new Font("Times New Roman",Font.BOLD,30));
+        add(francesco);
 
         title = new JLabel("Polynomial Calculator");
         title.setBounds(50,20,300,30);
@@ -37,7 +43,7 @@ class TextsOfFrame extends JPanel{
         add(secondPolynomial);
 
         resultText = new JLabel("Result = ");
-        resultText.setBounds(85,165,200,30);
+        resultText.setBounds(35,165,200,30);
         resultText.setFont(new Font("Times New Roman",Font.BOLD,20));
         add(resultText);
 
