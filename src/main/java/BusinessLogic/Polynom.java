@@ -41,39 +41,6 @@ public class Polynom {
         return forScreen;
     }
 
-//    public String polynomToString(HashMap<Integer, Double> polynom) {
-//        String forScreen = "";
-//        Monom[] forPrint = sortMonoms(polynom);
-//        for (Monom i : forPrint) {
-//            if (i.getExp() != 0) {
-//                if (i.getExp() < 0) {
-//                    if (i.getExp() != -1 && i.getGrad() != 0) {
-//                        forScreen = forScreen + "-" + i.getExp();
-//                    } else {
-//                        if (i.getExp() == -1) {
-//                            forScreen = forScreen + "-";
-//                            if (i.getGrad() == 0) {
-//                                forScreen = forScreen + "1";
-//                            }
-//                        }
-//                    }
-//                } else {
-//                    forScreen = forScreen + "+";
-//                    if (i.getExp() != 1 || i.getGrad() == 0) {
-//                        forScreen = forScreen + i.getExp();
-//                    }
-//                }
-//            }
-//            if (i.getGrad() != 0) {
-//                forScreen = forScreen + "x";
-//                if(i.getGrad() != 1){
-//                    forScreen = forScreen + "^" + i.getGrad();
-//                }
-//            }
-//        }
-//        return forScreen;
-//    }
-
     private List<Monom> mapToList(HashMap<Integer, Double> hashMap) {
         List<Monom> newList = new ArrayList<>();
         for (Map.Entry<Integer, Double> i : hashMap.entrySet()) {
